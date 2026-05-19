@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 100% 98%; /* warm beige/cream #FFFBF5 */
+    --foreground: 221 39% 11%; /* dark slate text #111827 */
+    --card: 0 0% 100%;
+    --card-foreground: 221 39% 11%;
+    --primary: 243 75% 62%; /* royal purple #5850EC */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 45 20% 90%; /* slightly darker cream */
+    --secondary-foreground: 221 39% 11%;
+    --muted: 210 20% 96%; /* #F3F4F6 */
+    --muted-foreground: 215 16% 47%; /* #6B7280 */
+    --accent: 43 96% 56%; /* Gold #FBBF24 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 91%; /* #E5E7EB */
+    --input: 220 13% 91%;
+    --ring: 243 75% 62%;
+    --radius: 1rem; /* softer, more modern rounded edges */
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply min-h-full;
+  }
+
+  body {
+    @apply min-h-full bg-background text-foreground antialiased;
+  }
+}
